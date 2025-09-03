@@ -20,6 +20,7 @@ h3,
 h4,
 h5,
 h6,
+h7,
 p,
 blockquote,
 pre,
@@ -287,7 +288,8 @@ h6 {
 	text-transform: capitalize;
 	letter-spacing: 0.2rem;
 }
-h3{
+
+h3 {
 	color: #ffffff;
 	font-weight: 600;
 	line-height: 1.5;
@@ -334,7 +336,7 @@ h6.major {
 	margin: 0 0 2rem 0;
 }
 
-h3.major{
+h3.major {
 	border-bottom: solid 0px #ffffff;
 	width: -moz-max-content;
 	width: -webkit-max-content;
@@ -808,7 +810,7 @@ input[type="radio"]+label:before {
 }
 
 .image img {
-	border-radius: 4px;
+	border-radius: 2px;
 	display: block;
 }
 
@@ -1086,18 +1088,19 @@ ul.icons li a:active {
 }
 
 table {
-	margin: 0 0 2rem 0;
+	margin: 0 0 1rem 0;
 	width: 100%;
 }
 
 table tbody tr {
+	/* line color */
 	border: solid 1px #ffffff;
 	border-left: 0;
 	border-right: 0;
 }
 
 table tbody tr:nth-child(2n + 1) {
-	background-color: rgba(255, 255, 255, 0.175);
+	background-color: rgba(114, 248, 5, 0.175);
 }
 
 table td {
@@ -1126,7 +1129,7 @@ table.alt {
 }
 
 /* full table lines*/
-table.alt tbody tr td {		
+table.alt tbody tr td {
 	border: solid 1px #ffffff;
 	border-left-width: 0;
 	border-top-width: 0;
@@ -1158,29 +1161,29 @@ button,
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
-	appearance: none;
+	appearance: auto;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	background-color: transparent;
-	border-radius: 4px;
+	/* background-color: transparent; */
+	border-radius: 2px;
 	border: 0;
-	box-shadow: inset 0 0 0 1px #ffffff;
+	box-shadow: inset 0 0 0 0 #ffffff;
 	color: #ffffff !important;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 300;
-	height: 2.75rem;
-	letter-spacing: 0.2rem;
-	line-height: 2.75rem;
+	height: 2rem;
+	letter-spacing: 0.1rem;
+	line-height: 2rem;
 	outline: 0;
-	padding: 0 1.25rem 0 1.35rem;
+	padding: 0 1rem 0 1rem;
 	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
+	text-decoration: thickness;
+	text-transform: capitalize;
+	white-space: normal;
 }
 
 input[type="submit"]:hover,
@@ -1231,7 +1234,7 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
 	background-color: #ffffff;
-	color: #1b1f22 !important;
+	color: #0091ff !important;
 	font-weight: 600;
 }
 
@@ -1254,7 +1257,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-	line-height: calc(2.75rem - 2px);
+	line-height: calc(2px);
 }
 
 /* BG */
@@ -1264,7 +1267,7 @@ button {
 	-webkit-transform: scale(1.0);
 	-ms-transform: scale(1.0);
 	transform: scale(1.0);
-	-webkit-backface-visibility: hidden;
+	-webkit-backface-visibility: visible;
 	position: fixed;
 	top: 0;
 	left: 0;
