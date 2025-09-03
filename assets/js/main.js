@@ -396,16 +396,16 @@
 	resizeCanvas();
 	window.addEventListener("resize", resizeCanvas);
 
-	// 追蹤滑鼠
+	// trace mouse
 	let mouse = { x: null, y: null };
 	window.addEventListener("mousemove", e => {
 		mouse.x = e.clientX;
 		mouse.y = e.clientY;
 	});
 
-	// 初始化粒子
+	// initialize particles
 	const particles = [];
-	for (let i = 0; i < 120; i++) {
+	for (let i = 0; i < 100; i++) {
 		particles.push({
 			x: Math.random() * canvas.width,
 			y: Math.random() * canvas.height,
@@ -418,15 +418,15 @@
 	function draw() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		// 畫粒子並更新位置
+		// draw and update
 		particles.forEach(p => {
-			// 滑鼠互動：靠近滑鼠時被推開
+			// interact
 			if (mouse.x && mouse.y) {
 				const dxMouse = p.x - mouse.x;
 				const dyMouse = p.y - mouse.y;
 				const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
 				if (distMouse < 100) {
-					p.x += dxMouse / distMouse * 2; // 推開
+					p.x += dxMouse / distMouse * 2; // push
 					p.y += dyMouse / distMouse * 2;
 				}
 			}
@@ -484,4 +484,5 @@
 		});
 
 })(jQuery);
+
 
