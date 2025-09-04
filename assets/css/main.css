@@ -277,7 +277,7 @@ p {
 h1,
 h2,
 /* h3, */
-h4,
+/* h4, */
 h5,
 h6 {
 	/*title thick words color*/
@@ -297,6 +297,14 @@ h3 {
 	text-transform: capitalize;
 	letter-spacing: 0.1rem;
 	font-weight: bold;
+}
+h4{
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 0rem 0;
+	text-transform: capitalize;
+	/* letter-spacing: 0.1rem; */
 }
 
 h7 {
@@ -810,7 +818,7 @@ input[type="radio"]+label:before {
 }
 
 .image img {
-	border-radius: 2px;
+	border-radius: 1px;
 	display: block;
 }
 
@@ -848,7 +856,7 @@ input[type="radio"]+label:before {
 
 .image.main {
 	display: block;
-	margin: 2.5rem 0;
+	margin: 0.3rem 0;
 	width: 100%;
 }
 
