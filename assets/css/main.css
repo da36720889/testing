@@ -319,7 +319,7 @@ h4 {
 	line-height: 1.2;
 	margin: 0 0 0rem 0;
 	/*text-transform: capitalize;*/
-	text-transform:none;
+	text-transform: none;
 	/* letter-spacing: 0.1rem; */
 }
 
@@ -334,12 +334,12 @@ h7 {
 }
 
 h8 {
-	color: #00e1ff;
+	color: #d3ecf0;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1;
 	margin: 1rem 0 1rem 0;
-	text-transform: capitalize;
-	letter-spacing: 0.1rem;
+	text-transform: none;
+	letter-spacing: 0rem;
 	font-weight: bold;
 }
 
@@ -351,7 +351,16 @@ h9 {
 	text-transform: none;
 	letter-spacing: 0.01rem;
 	font-weight: bold;
+	font-size: 1.5rem;
 }
+
+/* 
+h7,
+h8,
+h9 {
+	display: block;
+	width: 100%;
+} */
 
 h1 a,
 h2 a,
@@ -1943,9 +1952,3 @@ body.is-preload #footer {
 	/* 在背景層，避免蓋住內容 */
 
 }
-
-
-
-
-
-
