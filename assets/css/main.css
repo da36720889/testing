@@ -342,7 +342,7 @@ h8 {
 	font-weight: bold;
 }
 
-h8 {
+h9 {
 	color: #ffffff;
 	font-weight: 600;
 	line-height: 1.5;
@@ -1942,4 +1942,5 @@ body.is-preload #footer {
 	/* 在背景層，避免蓋住內容 */
 
 }
+
 
