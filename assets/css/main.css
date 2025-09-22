@@ -317,7 +317,8 @@ h4 {
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 0rem 0;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
+	text-transform:none;
 	/* letter-spacing: 0.1rem; */
 }
 
@@ -1929,4 +1930,5 @@ body.is-preload #footer {
 	height: 100%;
 	z-index: -1;
 	/* 在背景層，避免蓋住內容 */
+
 }
