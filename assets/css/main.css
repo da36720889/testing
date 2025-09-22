@@ -921,14 +921,15 @@ input[type="radio"]+label:before {
 
 .image:before {
 	pointer-events: none;
-	background-image: url("../../images/overlay.png");
-	background-color: rgba(19, 21, 25, 0.5);
+	/* background-image: url("../../images/overlay.png"); */
+	background-image: none;
+	background-color: transparent;
 	border-radius: 4px;
 	content: '';
 	display: block;
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 1;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -1864,7 +1865,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 40rem;
 	max-width: 100%;
-	background-color: rgba(27, 31, 34, 0.85);
+	background-color: rgba(91, 93, 136, 0.85);
 	border-radius: 4px;
 	opacity: 0;
 }
