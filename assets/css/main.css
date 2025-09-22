@@ -362,6 +362,11 @@ h9 {
 	letter-spacing: 0.01rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+	display: block;
+	text-align: center;
+	margin-top: 0;
+	/* 避免多餘空隙 */
+	margin-bottom: 1em;
 }
 
 /* 
@@ -982,6 +987,21 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+.image.main_PI {
+	display: block;
+	text-align: center;
+	margin-bottom: 1.2em;
+}
+
+.image.main_PI img {
+	max-width: 500px;
+	/* 你可以調整這個數值 */
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* for PI smaller image */
 .image.small {
 	width: 25%;
@@ -1240,6 +1260,7 @@ table tbody tr:nth-child(2n + 1) {
 table td {
 	padding: 0.75em 0.75em;
 	text-align: left;
+	font-weight: bold;
 }
 
 table th {
@@ -1865,7 +1886,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 40rem;
 	max-width: 100%;
-	background-color: rgba(91, 93, 136, 0.85);
+	background-color: rgba(135, 136, 165, 0.85);
 	border-radius: 4px;
 	opacity: 0;
 }
