@@ -342,6 +342,16 @@ h8 {
 	font-weight: bold;
 }
 
+h8 {
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 1rem 0 1rem 0;
+	text-transform: none;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -1932,3 +1942,4 @@ body.is-preload #footer {
 	/* 在背景層，避免蓋住內容 */
 
 }
+
