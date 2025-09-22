@@ -288,7 +288,7 @@ p {
 }
 
 h1,
-h2,
+/* h2, */
 /* h3, */
 /* h4, */
 h5,
@@ -300,6 +300,15 @@ h6 {
 	margin: 0 0 1rem 0;
 	text-transform: capitalize;
 	letter-spacing: 0.2rem;
+}
+
+h2 {
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 1rem 0;
+	text-transform: capitalize;
+	letter-spacing: 0rem;
 }
 
 h3 {
@@ -341,6 +350,7 @@ h8 {
 	text-transform: none;
 	letter-spacing: 0rem;
 	font-weight: bold;
+	font-size: 1.2rem;
 }
 
 h9 {
@@ -406,7 +416,7 @@ h3.major {
 	border-bottom: 2px solid #ffffff;
 	padding-bottom: 0.2rem;
 	margin-bottom: 0.5rem;
-	width: 80%;
+	width: 100%;
 	/* margin-left: auto;
 	margin-right: auto; */
 }
@@ -419,6 +429,32 @@ h3.major {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.underline-title-flex {
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #ddd;
+	/* 你原本的底線顏色 */
+	padding-bottom: 0.2em;
+	margin-bottom: 1em;
+	gap: 1em;
+	flex-wrap: wrap;
+}
+
+.underline-title-text {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: inherit;
+	/* 你可以加上其他 h2 樣式 */
+}
+
+.pub-links {
+	font-size: 1em;
+	white-space: normal;
+	word-break: break-all;
+	/* 讓連結區塊不會太寬，必要時自動換行 */
+	max-width: 60vw;
 }
 
 /* h8.major {
@@ -441,7 +477,7 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 	line-height: 1.4;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0rem;
 }
 
 h3 {
