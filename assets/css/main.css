@@ -1388,8 +1388,8 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-	background-color: #ffffff;
-	color: #0091ff !important;
+	background-color: #a487f3;
+	color: #f9feff !important;
 	font-weight: 600;
 }
 
