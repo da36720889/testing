@@ -2010,3 +2010,41 @@ body.is-preload #footer {
 	/* 在背景層，避免蓋住內容 */
 
 }
+
+.accordion-btn {
+	background: none;
+	border: none;
+	color: #337ab7;
+	font-size: 1em;
+	text-align: left;
+	cursor: pointer;
+	padding: 0;
+	outline: none;
+	transition: color 0.2s;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accordion-btn:hover {
+	color: #23527c;
+	text-decoration: none;
+}
+
+.accordion-arrow {
+	display: inline-block;
+	transition: transform 0.3s;
+	margin-left: 0.5em;
+}
+
+.accordion-arrow.open {
+	transform: rotate(180deg);
+}
+
+.accordion-panel {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-left: 1em;
+	border-left: 2px solid #eee;
+}

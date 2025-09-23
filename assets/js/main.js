@@ -470,6 +470,7 @@
 
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 	// Initialize.
 
 	// Hide main, articles.
@@ -486,3 +487,14 @@
 })(jQuery);
 
 
+function toggleAccordion(btn) {
+	const panel = btn.nextElementSibling;
+	const arrow = btn.querySelector('.accordion-arrow');
+	if (panel.style.display === "none" || panel.style.display === "") {
+		panel.style.display = "block";
+		arrow.classList.add('open');
+	} else {
+		panel.style.display = "none";
+		arrow.classList.remove('open');
+	}
+}
