@@ -1428,16 +1428,28 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre> -->
 		<!-- Footer -->
 		<footer id="footer">
 			<p>10617 台北市大安區羅斯福路四段一號 電機二館125B室 TEL:+886-2-33663700 ext.185</p>
+			<div id="sfcx4kf2dughafc2m3ztb88kmehu3q52sgt"></div>
+			<script type="text/javascript"
+				src="https://counter1.optistats.ovh/private/counter.js?c=x4kf2dughafc2m3ztb88kmehu3q52sgt&down=async"
+				async></script>
+			<noscript>
+				<a href="https://www.freecounterstat.com" title="hit counter widget">
+					<img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=x4kf2dughafc2m3ztb88kmehu3q52sgt"
+						border="0" title="hit counter widget" alt="hit counter widget">
+				</a>
+			</noscript>
+
 			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
 		</footer>
 		<!-- 在你想顯示瀏覽人數的地方加上 -->
 		<span id="visitor-count"></span>
+		<!-- 在 <head> 區塊加入 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1FM09824F"></script>
 		<script>
-			fetch('counter.php')
-				.then(response => response.text())
-				.then(count => {
-					document.getElementById('visitor-count').textContent = '瀏覽人數：' + count;
-				});
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'GA_MEASUREMENT_ID');
 		</script>
 
 	</div>
