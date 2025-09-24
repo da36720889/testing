@@ -2028,6 +2028,8 @@ body.is-preload #footer {
 	font-weight: bold;
 	letter-spacing: 0.01rem;
 	text-transform: none;
+	flex-wrap: wrap;
+	gap: 0.2rem;
 }
 
 .accordion-btn:hover {
