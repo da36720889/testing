@@ -405,7 +405,7 @@
 
 	// initialize particles
 	const particles = [];
-	for (let i = 0; i < 100; i++) {
+	for (let i = 0; i < 50; i++) {
 		particles.push({
 			x: Math.random() * canvas.width,
 			y: Math.random() * canvas.height,
