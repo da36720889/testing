@@ -2019,19 +2019,22 @@ body.is-preload #footer {
 	font-size: 1em;
 	text-align: left;
 	cursor: pointer;
-	padding: 0;
+	padding: 0 2em 0 0;
 	outline: none;
 	transition: color 0.2s;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: block;
 	font-weight: bold;
 	letter-spacing: 0.01rem;
 	text-transform: none;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-}
+	word-break: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+	position: relative;
+	min-height: unset;
+	line-height: normal;
+	}
+
 
 .accordion-btn:hover {
 	color: #23527c;
@@ -2055,6 +2058,28 @@ body.is-preload #footer {
 	border-left: 2px solid #eee;
 
 }
+
+/* .accordion-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0;
+	border: none;
+	background: none;
+	color: #337ab7;
+	font-size: 1em;
+	cursor: pointer;
+	width: 100%;
+	gap: 1rem;
+	text-align: left;
+	flex-wrap: nowrap; 
+}
+
+.accordion-arrow {
+	flex: 0 0 auto;
+	transition: transform 0.3s;
+	margin-left: 0.5em;
+} */
 
 
 
