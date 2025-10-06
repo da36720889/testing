@@ -987,6 +987,27 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+.image.main.smaller_LFOCT img {
+	width: 70%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+.image.main.smaller_FPGA img {
+	width: 60%;
+	max-width: 450px;
+	margin: 0 auto;
+	display: block;
+}
+
+.image.main.smaller_others img {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+
 .image.main_PI {
 	display: block;
 	text-align: center;
@@ -2033,7 +2054,7 @@ body.is-preload #footer {
 	position: relative;
 	min-height: unset;
 	line-height: normal;
-	}
+}
 
 
 .accordion-btn:hover {
@@ -2080,6 +2101,3 @@ body.is-preload #footer {
 	transition: transform 0.3s;
 	margin-left: 0.5em;
 } */
-
-
-
