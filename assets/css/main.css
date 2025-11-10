@@ -1870,16 +1870,16 @@ body.is-preload #bg:before {
 
 #header nav ul li.nav-dropdown {
 	position: relative;
-	border-left: solid 1.5px #13effa;
+	border-left: 0;
 }
 
 #header nav ul li.nav-dropdown::before {
 	content: '';
 	position: absolute;
-	left: 0;
+	left: -0.5px;
 	top: 0;
 	bottom: 0;
-	width: 1.5px;
+	width: 1px;
 	background: #13effa;
 	pointer-events: none;
 }
@@ -2068,7 +2068,7 @@ body.is-preload #header .content .inner {
 
 	#header nav ul li.nav-dropdown .nav-submenu {
 		position: static;
-		display: block;
+		display: none;
 		background: transparent;
 		border: 0;
 		border-radius: 0;
@@ -2076,6 +2076,11 @@ body.is-preload #header .content .inner {
 		backdrop-filter: none;
 		width: 100%;
 		min-width: 0;
+	}
+
+	#header nav ul li.nav-dropdown:hover .nav-submenu,
+	#header nav ul li.nav-dropdown:focus-within .nav-submenu {
+		display: block;
 	}
 
 	#header nav ul li.nav-dropdown .nav-submenu a {
@@ -2088,6 +2093,10 @@ body.is-preload #header .content .inner {
 
 	#header nav ul li.nav-dropdown::before {
 		display: none;
+	}
+
+	#header nav ul li.nav-dropdown {
+		border-left: 0;
 	}
 
 	#header nav.use-middle:after {
