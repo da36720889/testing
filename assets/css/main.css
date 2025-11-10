@@ -247,6 +247,16 @@ textarea {
 	line-height: 1;
 }
 
+html[lang="zh-Hant"] body,
+html[lang="zh-Hant"] input,
+html[lang="zh-Hant"] select,
+html[lang="zh-Hant"] textarea {
+	font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	letter-spacing: 0.02em;
+}
+
 a {
 	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -280,11 +290,20 @@ p {
 .justified-text {
 	font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
 	text-align: justify;
+	line-height: 1.8;
 }
 
 .justified-text li {
 	margin-bottom: 0.5em;
-	line-height: 1.1;
+	line-height: 1.6;
+}
+
+html[lang="zh-Hant"] table td,
+html[lang="zh-Hant"] table th {
+	font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.01em;
 }
 
 h1,
@@ -1589,6 +1608,54 @@ body.is-preload #bg:before {
 		padding: 1rem;
 	}
 
+}
+
+/* Language Switcher */
+
+.language-switcher {
+	position: fixed;
+	top: 1.75rem;
+	right: 1.75rem;
+	z-index: 1200;
+	font-family: 'Source Sans Pro', 'Noto Sans TC', sans-serif;
+	font-size: 0.9rem;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
+
+.language-switcher a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0.25rem 0.35rem;
+	border-radius: 0.25rem;
+	transition: color 0.2s ease;
+	border-bottom: none;
+}
+
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+	background-color: transparent;
+	outline: none;
+	border-bottom: none;
+}
+
+.language-switcher a.active {
+	font-weight: 600;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.language-switcher .language-separator {
+	margin: 0 0.25rem;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 736px) {
+	.language-switcher {
+		top: 1rem;
+		right: 1rem;
+		font-size: 0.8rem;
+	}
 }
 
 /* Header */
